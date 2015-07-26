@@ -237,7 +237,7 @@
         {.end}
       {.end}
 
-      {.section collection}{.equal? typeName "products"}
+      {.section collection}{.equal? typeName "products" , "pistols" , "rifles" , "shotguns", "Firearm Accessories"}
         {.section categories}
         <footer id="categoryNav" class="entry-footer clear">
           <div class="outer-wrapper">
