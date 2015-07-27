@@ -18,6 +18,31 @@
       {.section mainImage}
       <img {@|image-meta} class="loading" data-load="false" />
       <div class="image-overlay-wrapper"></div>
+       {.equal? typeName "grid"}
+
+                        <section id="index-content-wrapper-{urlId|slugify}" class="index-content-wrapper index-collection-type-{typeName}{.main-image?} main-image-on{.or} main-image-off{.end}">
+
+                            <div class="grid-wrapper">
+
+                                {.repeated section items}
+
+                                    <div class="item-wrapper">
+
+                                        <article id="item-{id}" class="item {@|item-classes}">
+
+                                            {body}
+
+                                        </article>
+
+                                    </div>
+
+                                {.end}
+
+                          </div>
+
+                        </section>
+
+                    {.end}
       {.end}
     </div>
     {.end}
